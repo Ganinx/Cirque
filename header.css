@@ -22,7 +22,7 @@
     margin-right: 50px;
 }
 .titre {
-    font-size: 8rem;
+    font-size: 10rem;
     color: #919409;
     top: 107px;
     right: 134px;
@@ -38,7 +38,16 @@
     top: 0;
 }
 .fond-histoire {
+    
+}
+.histoire {
+    
     background: #963131;
     width: 100%;
     height: 100%;
+    position: absolute;
+}
+.elephant {
+    position: absolute;
+    width: 10%;
 }
