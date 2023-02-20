@@ -22,7 +22,7 @@
     margin-right: 50px;
 }
 .titre {
-    font-size: 8rem;
+    font-size: 10rem;
     color: #919409;
     top: 210px;
     right: 230px;
@@ -42,9 +42,14 @@
     top: 0;
 }
 .fond-histoire {
+    
+}
+.histoire {
+    
     background: #963131;
     width: 100%;
     height: 100%;
+    position: absolute;
 }
 .fond-personnel {
     background-color: #841818;
@@ -147,3 +152,4 @@
     top: 1755px;
     left: 306px;
 }
+
