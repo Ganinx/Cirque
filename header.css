@@ -1,12 +1,45 @@
 * {
     font-size: 24px;
     font-family: "Italiana";
+    transition: 0.5s;
 }
 .svg-menub {
     width: 10%;
 }
+.menub {
+    width: 30%;
+    justify-content: space-around;
+}
 .menu {
     margin-top: revert;
+}
+.menu-accueil,
+.menu-histoire,
+.menu-personnel {
+    text-decoration: none;
+    line-height: 15px;
+    position: relative;
+}
+.menu-accueil:hover::before,
+.menu-histoire:hover::before,
+.menu-personnel:hover::before {
+    right: 3px;
+    opacity: 1;
+    visibility: visible; 
+}
+.menu-accueil::before,
+.menu-histoire::before,
+.menu-personnel::before {
+    transition: opacity .4s ease-in-out,visibility .4s ease-in-out,right .4s ease-in-out;
+    content: '';
+    left: -1px;
+    right: calc(100% + 6px);
+    bottom: -0.300rem;
+    position: absolute;
+    background-color: #919409;
+    height: 0.125rem;
+    opacity: 0;
+    visibility: hidden;
 }
 .circus {
     position: relative;
@@ -58,7 +91,18 @@
     top: 80%;
     left: 28%;
 }
-
+.cracheur-feu:hover{
+    transform: scale(1.4);
+}
+.foulard:hover {
+    transform: scale(1.1)
+}
+.elephant:hover {
+    transform: scale(1.1)
+}
+.zebre:hover {
+    transform: scale(1.2)
+}
 
 .titre-section2 {
     color: #919409;
