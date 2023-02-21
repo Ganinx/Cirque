@@ -15,8 +15,13 @@
 </head>
 
 <body>
-    <nav class="container-fluid navbar position-fixed navbar-index">
-        <div class="menub d-flex text-center ms-5">
+    <!-- <nav class="container-fluid navbar position-fixed navbar-index"> -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-scroll">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <!--<svg class="svg-menub" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -32,16 +37,25 @@
                     </defs>
                 </g>
             </svg>
-            <p class="text-white menu">MENU</p>--> 
-            <a href="#accueil" class="menu-accueil text-white">ACCUEIL</a>
-            <a href="#histoire" class="menu-histoire text-white">HISTOIRE</a>
-            <a href="#personnel" class="menu-personnel text-white">PERSONNEL</a>
-        </div>
-        <div class="acheter-menu spacing ">
-            <p class="acheter-menu-para text-white menu">ACHETER UN TICKET</p>
-        </div>
+            <p class="text-white menu">MENU</p>-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">ACCUEIL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HISTOIRE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PERSONNEL</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="acheter-menu spacing ">
+                <p class="acheter-menu-para  menu">ACHETER UN TICKET</p>
+            </div>
     </nav>
-    <section class="container-fluid firstpage hero" id="accueil">
+    <section class="container-fluid firstpage hero h-100" id="accueil">
         <div class="circus">
             <img src="images/circus.jpg" alt="" class="img-fluid">
             <div class="bloc-black"></div>
@@ -49,10 +63,13 @@
         <h1 class="titre uppercase position-absolute">Le <br>cirque <br>Doré</h1>
     </section>
     <section class="container-fluid firstpage fond-histoire" id="histoire">
-            <h2 class="titre-section2 a1">Le show</h2>
-            <h2 class="titre-section2 a2">le plus</h2>
-            <h2 class="titre-section2 a3">ambitieux</h2>
-            <p class="para1-section2">Praesent ut lectus tortor. Nulla<br>imperdiet odio non felis rutrum<br> commodo. Donec lacinia tempor<br> aliquet. Curabitur sit amet pulvinar<br> purus, quis ornare purus. Nam quis<br> sodales. Lorem, ipsum dolor sit amet<br> consectetur adipisicing elit. Neque <br> quia asperiores rerum nulla ad numquam <br> placeat explicabo iusto repellendus <br> maxime.</p>
+        <h2 class="titre-section2 a1">Le show</h2>
+        <h2 class="titre-section2 a2">le plus</h2>
+        <h2 class="titre-section2 a3">ambitieux</h2>
+        <p class="para1-section2">Praesent ut lectus tortor. Nulla<br>imperdiet odio non felis rutrum<br> commodo. Donec
+            lacinia tempor<br> aliquet. Curabitur sit amet pulvinar<br> purus, quis ornare purus. Nam quis<br> sodales.
+            Lorem, ipsum dolor sit amet<br> consectetur adipisicing elit. Neque <br> quia asperiores rerum nulla ad
+            numquam <br> placeat explicabo iusto repellendus <br> maxime.</p>
         <div class="p-5 d-flex justify-content-between">
             <div class="polygon">
                 <img src="images/Polygon 1.png" alt="" class="img-fluid cracheur-feu">
@@ -64,7 +81,11 @@
             <div class="d-flex align-items-end">
                 <img src="images/Rectangle 7.png" alt="" class="img-fluid zebre">
             </div>
-            <p class="para2-section2"> mauris tempus rutrum. Ut volutpat<br> lobortis quam faucibus tincidunt. Praesent<br> vulputate vitae augue id blandit.<br> Sed molestie nisi hendrerit urna vestibulum<br>  accumsan. Morbi auctor euismod massa<br>, id imperdiet dui tincidunt sed. Cras ultrices pulvinar<br> massa ac ultrices. In id volutpat neque.<br> Mauris tortor nulla, congue eget urna non,<br> bibendum scelerisque enim. Vivamus turpis te.<br> Etiam interdum interdum sollicitudin.</p>
+            <p class="para2-section2"> mauris tempus rutrum. Ut volutpat<br> lobortis quam faucibus tincidunt.
+                Praesent<br> vulputate vitae augue id blandit.<br> Sed molestie nisi hendrerit urna vestibulum<br>
+                accumsan. Morbi auctor euismod massa<br>, id imperdiet dui tincidunt sed. Cras ultrices pulvinar<br>
+                massa ac ultrices. In id volutpat neque.<br> Mauris tortor nulla, congue eget urna non,<br> bibendum
+                scelerisque enim. Vivamus turpis te.<br> Etiam interdum interdum sollicitudin.</p>
         </div>
     </section>
     <section class="container-fluid fond-personnel" id="personnel">
@@ -111,7 +132,7 @@
         <div class="bulle bulle-small bulle-small-bot"></div>
     </section>
     <footer class="d-flex justify-content-center align-items-center">
-        <ul class="d-flex justify-content-around text-white" >
+        <ul class="d-flex justify-content-around text-white">
             <li><a href="#accueil" class="text-decoration-none text-white">ACCUEIL</a></li>
             <li><a href="#histoire" class="text-decoration-none text-white">HISTOIRE</a></li>
             <li><a href="#personnel" class="text-decoration-none text-white">PERSONNEL</a></li>

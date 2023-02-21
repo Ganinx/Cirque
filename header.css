@@ -3,6 +3,9 @@
     font-family: "Italiana";
     transition: 0.5s;
 }
+section {
+    overflow: hidden;
+}
 .svg-menub {
     width: 10%;
 }
@@ -25,16 +28,16 @@
 .menu-personnel:hover::before {
     right: 3px;
     opacity: 1;
-    visibility: visible; 
+    visibility: visible;
 }
 .menu-accueil::before,
 .menu-histoire::before,
 .menu-personnel::before {
-    transition: opacity .4s ease-in-out,visibility .4s ease-in-out,right .4s ease-in-out;
-    content: '';
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, right 0.4s ease-in-out;
+    content: "";
     left: -1px;
     right: calc(100% + 6px);
-    bottom: -0.300rem;
+    bottom: -0.3rem;
     position: absolute;
     background-color: #919409;
     height: 0.125rem;
@@ -47,6 +50,17 @@
 .navbar-index {
     z-index: 999;
 }
+nav {
+    backdrop-filter: blur(10px) !important;
+}
+.nav-link,
+.nav-link .active,
+.acheter-menu p {
+    color: white !important;
+}
+.navbar-toggler {
+    border-color: white !important;
+}
 .firstpage {
     padding-left: 0;
     padding-right: 0;
@@ -56,13 +70,15 @@
 }
 .titre {
     font-size: 10rem;
-    color: #919409;
+    color: white;
+    /* color: #919409; */
     top: 210px;
     right: 230px;
     text-transform: uppercase;
     z-index: 998;
 }
 .hero {
+    max-height: 100vh;
     z-index: 502;
     position: relative;
 }
@@ -79,29 +95,29 @@
     position: relative;
     z-index: 501;
 }
-.para1-section2{
+.para1-section2 {
     color: #919409;
     position: absolute;
     top: 10%;
     left: 50%;
 }
-.para2-section2{
+.para2-section2 {
     color: #919409;
     position: absolute;
     top: 80%;
     left: 28%;
 }
-.cracheur-feu:hover{
+.cracheur-feu:hover {
     transform: scale(1.4);
 }
 .foulard:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 .elephant:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 .zebre:hover {
-    transform: scale(1.2)
+    transform: scale(1.2);
 }
 
 .titre-section2 {
@@ -116,18 +132,18 @@
     left: 10%;
 }
 .a2 {
-    top:50% ;
+    top: 50%;
     left: 30%;
 }
 .a3 {
-    top: 65% ;
+    top: 65%;
     left: 45%;
 }
 
 .fond-personnel {
     background-color: #841818;
     z-index: 500;
-    position:relative;
+    position: relative;
 }
 .bloc-clown {
     width: 20%;
@@ -242,7 +258,7 @@ ul {
 }
 footer {
     min-height: 300px;
-    background: #411D27;
+    background: #411d27;
     z-index: 501;
     position: relative;
 }
@@ -251,7 +267,3 @@ footer {
     color: black;
     font-size: 18px;
 }
-
-    
-
-
