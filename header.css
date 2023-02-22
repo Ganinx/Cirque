@@ -3,6 +3,9 @@
     font-family: "Italiana";
     transition: 0.5s;
 }
+p {
+    color: white !important;
+}
 section {
     overflow: hidden;
 }
@@ -45,7 +48,12 @@ section {
     visibility: hidden;
 }
 .circus {
-    position: relative;
+    /* position: relative; */
+    width: 100vw;
+    height: 100vh;
+    background: url(images/circus.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .navbar-index {
     z-index: 999;
@@ -58,8 +66,10 @@ nav {
 .acheter-menu p {
     color: white !important;
 }
-.navbar-toggler {
+.navbar-toggler,
+.navbar-toggler::after {
     border-color: white !important;
+    border: none;
 }
 .firstpage {
     padding-left: 0;
@@ -69,18 +79,21 @@ nav {
     margin-right: 50px;
 }
 .titre {
-    font-size: 10rem;
+    font-size: 100px;
     color: white;
     /* color: #919409; */
-    top: 210px;
-    right: 230px;
+    /* top: 210px;
+    right: 230px; */
     text-transform: uppercase;
     z-index: 998;
 }
 .hero {
     max-height: 100vh;
     z-index: 502;
-    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .bloc-black {
     background: rgba(12, 3, 3, 0.4);
@@ -96,16 +109,12 @@ nav {
     z-index: 501;
 }
 .para1-section2 {
-    color: #919409;
-    position: absolute;
-    top: 10%;
-    left: 50%;
+    display: flex;
+    align-items: center;
 }
 .para2-section2 {
-    color: #919409;
-    position: absolute;
-    top: 80%;
-    left: 28%;
+    align-items: center;
+    display: flex;
 }
 .cracheur-feu:hover {
     transform: scale(1.4);
@@ -113,31 +122,34 @@ nav {
 .foulard:hover {
     transform: scale(1.1);
 }
+.elephant {
+    display: flex;
+    justify-content: center;
+}
 .elephant:hover {
     transform: scale(1.1);
+}
+.zebre {
+    display: flex;
+    align-items: flex-end;
 }
 .zebre:hover {
     transform: scale(1.2);
 }
 
 .titre-section2 {
-    color: #919409;
-    font-size: 9rem;
-    position: absolute;
+    color: #000000;
+    font-size: 7rem;
     text-transform: uppercase;
-    z-index: 502;
 }
 .a1 {
-    top: 35%;
-    left: 10%;
+    grid-area: 1 / 2 / 1 / span 2;
 }
 .a2 {
-    top: 50%;
-    left: 30%;
+    grid-area: 2 / 3 / 2 / span 2;
 }
 .a3 {
-    top: 65%;
-    left: 45%;
+    grid-area: 3 / 4 / 3 / span 2;
 }
 
 .fond-personnel {
@@ -156,7 +168,7 @@ nav {
     color: #919409;
 }
 .titre-section {
-    color: #919409;
+    color: black;
     font-size: 5rem;
     position: absolute;
     text-transform: uppercase;
@@ -171,8 +183,8 @@ nav {
     border-radius: 80px;
 }
 .texte-artiste {
-    width: 25%;
-    color: #919409;
+    display: flex;
+    align-items: center;
 }
 .p1 {
     top: 445px;
@@ -266,4 +278,94 @@ footer {
     text-decoration: none;
     color: black;
     font-size: 18px;
+}
+@media only screen and (max-width: 580px) {
+    * {
+        font-size: 18px;
+    }
+    .titre-group {
+        grid-template: 5% 5% 5%/ 10% 10% 10%;
+    }
+    .a1 {
+        grid-area: 1/ 2 / 1 / 2;
+    }
+    .a2 {
+        grid-area: 3/2/23/2;
+    }
+    .a3 {
+        grid-area: 5/2/5/2;
+    }
+    .bulle-big {
+        width: 200px;
+        height: 200px;
+    }
+    .bulle {
+        z-index: 501;
+        background: #919409;
+        border-radius: 272px;
+        position: absolute;
+    }
+    .bulle-semibig {
+        width: 100px;
+        height: 100px;
+    }
+    .bulle-neutre {
+        width: 54px;
+        height: 54px;
+    }
+    .bulle-semismall {
+        width: 0px;
+        height: 0px;
+    }
+    .bulle-small {
+        width: 0px;
+        height: 0px;
+    }
+    .bulle-big-top {
+        top: -101px;
+        left: -90px;
+    }
+    .bulle-semibig-top {
+        top: 137px;
+        left: 47px;
+    }
+    .bulle-neutre-top {
+        top: 65px;
+        left: 116px;
+    }
+    .bulle-semismall-top {
+        top: 190px;
+        left: 311px;
+    }
+    .bulle-small-top {
+        top: 313px;
+        left: 306px;
+    }
+    .bulle-big-bot {
+        bottom: -289px;
+        right: -397px;
+    }
+    .bulle-semibig-bot {
+        bottom: 194px;
+        right: 104px;
+    }
+    .bulle-neutre-bot {
+        bottom: 65px;
+        right: 218px;
+    }
+    .bulle-semismall-bot {
+        bottom: 190px;
+        right: 311px;
+    }
+    .bulle-small-bot {
+        bottom: 313px;
+        right: 306px;
+    }
+    .section-artiste {
+        flex-direction: column-reverse;
+    }
+}
+.titre-group {
+    display: grid;
+    grid-template: 30% 30% 20% / 10% 20% 20%;
 }
